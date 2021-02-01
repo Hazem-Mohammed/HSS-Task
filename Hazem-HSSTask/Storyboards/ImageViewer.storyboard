@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dLA-aO-MgI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Viewer View Controller-->
+        <scene sceneID="RfB-1J-4uo">
+            <objects>
+                <viewController id="dLA-aO-MgI" customClass="ImageViewerViewController" customModule="Hazem_HSSTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PId-lN-YJj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x8Y-4Q-hCE">
+                                <rect key="frame" x="0.0" y="224" width="414" height="448"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WOL-qr-TZ6"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x8Y-4Q-hCE" firstAttribute="height" secondItem="PId-lN-YJj" secondAttribute="height" multiplier="0.5" id="BDX-wC-r3l"/>
+                            <constraint firstItem="x8Y-4Q-hCE" firstAttribute="centerX" secondItem="PId-lN-YJj" secondAttribute="centerX" id="Cti-yN-cwH"/>
+                            <constraint firstItem="x8Y-4Q-hCE" firstAttribute="width" secondItem="PId-lN-YJj" secondAttribute="width" id="NUo-7s-XF0"/>
+                            <constraint firstItem="x8Y-4Q-hCE" firstAttribute="centerY" secondItem="PId-lN-YJj" secondAttribute="centerY" id="Qde-b0-IuS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selectedPhotoImageView" destination="x8Y-4Q-hCE" id="c5C-QO-6Za"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZT-ZL-u9p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110" y="113"/>
+        </scene>
+    </scenes>
+</document>

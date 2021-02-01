@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A134704925C803C3004C5858 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A134704825C803C3004C5858 /* UserProfileViewController.swift */; };
+		A134704F25C80544004C5858 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A134704E25C80544004C5858 /* UserProfileModel.swift */; };
+		A1955D7225C7E7DF009B9101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1955D7125C7E7DF009B9101 /* AppDelegate.swift */; };
+		A1955D7925C7E7DF009B9101 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1955D7725C7E7DF009B9101 /* Main.storyboard */; };
+		A1955D7B25C7E7E0009B9101 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1955D7A25C7E7E0009B9101 /* Assets.xcassets */; };
+		A1955D7E25C7E7E0009B9101 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1955D7C25C7E7E0009B9101 /* LaunchScreen.storyboard */; };
+		A1955D8C25C7FF1B009B9101 /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1955D8B25C7FF1B009B9101 /* ProgressHUD.swift */; };
+		A1955D9025C7FF61009B9101 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1955D8F25C7FF61009B9101 /* AlertController.swift */; };
+		A1955D9325C7FF9C009B9101 /* APIConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1955D9225C7FF9C009B9101 /* APIConstant.swift */; };
+		A1955D9A25C800D7009B9101 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1955D9925C800D7009B9101 /* NetworkController.swift */; };
+		A195DCBE25C81405003D3413 /* UserAlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCBC25C81405003D3413 /* UserAlbumsTableViewCell.swift */; };
+		A195DCBF25C81405003D3413 /* UserAlbumsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A195DCBD25C81405003D3413 /* UserAlbumsTableViewCell.xib */; };
+		A195DCC225C81563003D3413 /* UserAlbumesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCC125C81563003D3413 /* UserAlbumesResponse.swift */; };
+		A195DCC525C81D76003D3413 /* AlbumDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A195DCC425C81D76003D3413 /* AlbumDetails.storyboard */; };
+		A195DCC825C81DF5003D3413 /* AlbumdetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCC725C81DF5003D3413 /* AlbumdetailsViewController.swift */; };
+		A195DCCD25C823F1003D3413 /* AlbumPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCCB25C823F1003D3413 /* AlbumPhotoCollectionViewCell.swift */; };
+		A195DCCE25C823F1003D3413 /* AlbumPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A195DCCC25C823F1003D3413 /* AlbumPhotoCollectionViewCell.xib */; };
+		A195DCD125C83A3C003D3413 /* AlbumPhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCD025C83A3C003D3413 /* AlbumPhotosResponse.swift */; };
+		A195DCE925C84A1F003D3413 /* AlbumdetailsViewController+SearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCE825C84A1F003D3413 /* AlbumdetailsViewController+SearchBarDelegate.swift */; };
+		A195DCEC25C84A64003D3413 /* AlbumdetailsViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCEB25C84A64003D3413 /* AlbumdetailsViewController+CollectionView.swift */; };
+		A195DCEF25C84A94003D3413 /* UserProfileViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCEE25C84A94003D3413 /* UserProfileViewController+TableView.swift */; };
+		A195DCF925C84C14003D3413 /* ImageViewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A195DCF825C84C14003D3413 /* ImageViewer.storyboard */; };
+		A195DCFC25C84CFD003D3413 /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A195DCFB25C84CFD003D3413 /* ImageViewerViewController.swift */; };
+		D6F5DBBC3767F7198D793D7B /* Pods_Hazem_HSSTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBBBFAF7EA00163E7C9BA57 /* Pods_Hazem_HSSTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00A2D3BE2E0662D23899C87A /* Pods-Hazem-HSSTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hazem-HSSTask.debug.xcconfig"; path = "Target Support Files/Pods-Hazem-HSSTask/Pods-Hazem-HSSTask.debug.xcconfig"; sourceTree = "<group>"; };
+		70E0B25163EFB788A4B44559 /* Pods-Hazem-HSSTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hazem-HSSTask.release.xcconfig"; path = "Target Support Files/Pods-Hazem-HSSTask/Pods-Hazem-HSSTask.release.xcconfig"; sourceTree = "<group>"; };
+		A134704825C803C3004C5858 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		A134704E25C80544004C5858 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		A1955D6E25C7E7DF009B9101 /* Hazem-HSSTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hazem-HSSTask.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1955D7125C7E7DF009B9101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1955D7825C7E7DF009B9101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1955D7A25C7E7E0009B9101 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1955D7D25C7E7E0009B9101 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1955D7F25C7E7E0009B9101 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1955D8B25C7FF1B009B9101 /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		A1955D8F25C7FF61009B9101 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		A1955D9225C7FF9C009B9101 /* APIConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstant.swift; sourceTree = "<group>"; };
+		A1955D9925C800D7009B9101 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		A195DCBC25C81405003D3413 /* UserAlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		A195DCBD25C81405003D3413 /* UserAlbumsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAlbumsTableViewCell.xib; sourceTree = "<group>"; };
+		A195DCC125C81563003D3413 /* UserAlbumesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbumesResponse.swift; sourceTree = "<group>"; };
+		A195DCC425C81D76003D3413 /* AlbumDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlbumDetails.storyboard; sourceTree = "<group>"; };
+		A195DCC725C81DF5003D3413 /* AlbumdetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumdetailsViewController.swift; sourceTree = "<group>"; };
+		A195DCCB25C823F1003D3413 /* AlbumPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A195DCCC25C823F1003D3413 /* AlbumPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		A195DCD025C83A3C003D3413 /* AlbumPhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPhotosResponse.swift; sourceTree = "<group>"; };
+		A195DCE825C84A1F003D3413 /* AlbumdetailsViewController+SearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumdetailsViewController+SearchBarDelegate.swift"; sourceTree = "<group>"; };
+		A195DCEB25C84A64003D3413 /* AlbumdetailsViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlbumdetailsViewController+CollectionView.swift"; sourceTree = "<group>"; };
+		A195DCEE25C84A94003D3413 /* UserProfileViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserProfileViewController+TableView.swift"; sourceTree = "<group>"; };
+		A195DCF825C84C14003D3413 /* ImageViewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageViewer.storyboard; sourceTree = "<group>"; };
+		A195DCFB25C84CFD003D3413 /* ImageViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
+		BEBBBFAF7EA00163E7C9BA57 /* Pods_Hazem_HSSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hazem_HSSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1955D6B25C7E7DE009B9101 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6F5DBBC3767F7198D793D7B /* Pods_Hazem_HSSTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		457DBA4EA2A8BF36131FFC04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00A2D3BE2E0662D23899C87A /* Pods-Hazem-HSSTask.debug.xcconfig */,
+				70E0B25163EFB788A4B44559 /* Pods-Hazem-HSSTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		663E96E84346DF89B036608C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEBBBFAF7EA00163E7C9BA57 /* Pods_Hazem_HSSTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1955D6525C7E7DE009B9101 = {
+			isa = PBXGroup;
+			children = (
+				A1955D7025C7E7DF009B9101 /* Hazem-HSSTask */,
+				A1955D6F25C7E7DF009B9101 /* Products */,
+				457DBA4EA2A8BF36131FFC04 /* Pods */,
+				663E96E84346DF89B036608C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A1955D6F25C7E7DF009B9101 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1955D6E25C7E7DF009B9101 /* Hazem-HSSTask.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1955D7025C7E7DF009B9101 /* Hazem-HSSTask */ = {
+			isa = PBXGroup;
+			children = (
+				A1955D7125C7E7DF009B9101 /* AppDelegate.swift */,
+				A1955D7A25C7E7E0009B9101 /* Assets.xcassets */,
+				A1955D7F25C7E7E0009B9101 /* Info.plist */,
+				A1955D8A25C7FEA0009B9101 /* Storyboards */,
+				A1955D8925C7FE9D009B9101 /* Models */,
+				A1955D8825C7FE9A009B9101 /* View */,
+				A1955D8725C7FE97009B9101 /* Controllers */,
+			);
+			path = "Hazem-HSSTask";
+			sourceTree = "<group>";
+		};
+		A1955D8625C7FE95009B9101 /* HelperController */ = {
+			isa = PBXGroup;
+			children = (
+				A1955D8B25C7FF1B009B9101 /* ProgressHUD.swift */,
+				A1955D8F25C7FF61009B9101 /* AlertController.swift */,
+				A1955D9225C7FF9C009B9101 /* APIConstant.swift */,
+				A1955D9925C800D7009B9101 /* NetworkController.swift */,
+			);
+			path = HelperController;
+			sourceTree = "<group>";
+		};
+		A1955D8725C7FE97009B9101 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1955D9625C8006C009B9101 /* ViewControllers */,
+				A1955D8625C7FE95009B9101 /* HelperController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A1955D8825C7FE9A009B9101 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1955D9725C800A5009B9101 /* TableViewCell */,
+				A1955D9825C800AF009B9101 /* CollectionViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1955D8925C7FE9D009B9101 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A134704E25C80544004C5858 /* UserProfileModel.swift */,
+				A195DCC125C81563003D3413 /* UserAlbumesResponse.swift */,
+				A195DCD025C83A3C003D3413 /* AlbumPhotosResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A1955D8A25C7FEA0009B9101 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A1955D7C25C7E7E0009B9101 /* LaunchScreen.storyboard */,
+				A1955D7725C7E7DF009B9101 /* Main.storyboard */,
+				A195DCC425C81D76003D3413 /* AlbumDetails.storyboard */,
+				A195DCF825C84C14003D3413 /* ImageViewer.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A1955D9625C8006C009B9101 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A134704825C803C3004C5858 /* UserProfileViewController.swift */,
+				A195DCEE25C84A94003D3413 /* UserProfileViewController+TableView.swift */,
+				A195DCC725C81DF5003D3413 /* AlbumdetailsViewController.swift */,
+				A195DCE825C84A1F003D3413 /* AlbumdetailsViewController+SearchBarDelegate.swift */,
+				A195DCEB25C84A64003D3413 /* AlbumdetailsViewController+CollectionView.swift */,
+				A195DCFB25C84CFD003D3413 /* ImageViewerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A1955D9725C800A5009B9101 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A195DCBC25C81405003D3413 /* UserAlbumsTableViewCell.swift */,
+				A195DCBD25C81405003D3413 /* UserAlbumsTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		A1955D9825C800AF009B9101 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A195DCCB25C823F1003D3413 /* AlbumPhotoCollectionViewCell.swift */,
+				A195DCCC25C823F1003D3413 /* AlbumPhotoCollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1955D6D25C7E7DE009B9101 /* Hazem-HSSTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1955D8225C7E7E0009B9101 /* Build configuration list for PBXNativeTarget "Hazem-HSSTask" */;
+			buildPhases = (
+				C94BCD570DA8A17FD3D3A020 /* [CP] Check Pods Manifest.lock */,
+				A1955D6A25C7E7DE009B9101 /* Sources */,
+				A1955D6B25C7E7DE009B9101 /* Frameworks */,
+				A1955D6C25C7E7DE009B9101 /* Resources */,
+				CC8B0CA831FC2B787868B7C0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hazem-HSSTask";
+			productName = "Hazem-HSSTask";
+			productReference = A1955D6E25C7E7DF009B9101 /* Hazem-HSSTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1955D6625C7E7DE009B9101 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					A1955D6D25C7E7DE009B9101 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = A1955D6925C7E7DE009B9101 /* Build configuration list for PBXProject "Hazem-HSSTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1955D6525C7E7DE009B9101;
+			productRefGroup = A1955D6F25C7E7DF009B9101 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1955D6D25C7E7DE009B9101 /* Hazem-HSSTask */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1955D6C25C7E7DE009B9101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A195DCCE25C823F1003D3413 /* AlbumPhotoCollectionViewCell.xib in Resources */,
+				A195DCF925C84C14003D3413 /* ImageViewer.storyboard in Resources */,
+				A1955D7E25C7E7E0009B9101 /* LaunchScreen.storyboard in Resources */,
+				A1955D7B25C7E7E0009B9101 /* Assets.xcassets in Resources */,
+				A195DCBF25C81405003D3413 /* UserAlbumsTableViewCell.xib in Resources */,
+				A195DCC525C81D76003D3413 /* AlbumDetails.storyboard in Resources */,
+				A1955D7925C7E7DF009B9101 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C94BCD570DA8A17FD3D3A020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hazem-HSSTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC8B0CA831FC2B787868B7C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hazem-HSSTask/Pods-Hazem-HSSTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hazem-HSSTask/Pods-Hazem-HSSTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hazem-HSSTask/Pods-Hazem-HSSTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1955D6A25C7E7DE009B9101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A195DCC825C81DF5003D3413 /* AlbumdetailsViewController.swift in Sources */,
+				A1955D9025C7FF61009B9101 /* AlertController.swift in Sources */,
+				A195DCEF25C84A94003D3413 /* UserProfileViewController+TableView.swift in Sources */,
+				A195DCC225C81563003D3413 /* UserAlbumesResponse.swift in Sources */,
+				A195DCE925C84A1F003D3413 /* AlbumdetailsViewController+SearchBarDelegate.swift in Sources */,
+				A195DCCD25C823F1003D3413 /* AlbumPhotoCollectionViewCell.swift in Sources */,
+				A1955D9325C7FF9C009B9101 /* APIConstant.swift in Sources */,
+				A195DCD125C83A3C003D3413 /* AlbumPhotosResponse.swift in Sources */,
+				A134704F25C80544004C5858 /* UserProfileModel.swift in Sources */,
+				A195DCEC25C84A64003D3413 /* AlbumdetailsViewController+CollectionView.swift in Sources */,
+				A134704925C803C3004C5858 /* UserProfileViewController.swift in Sources */,
+				A1955D9A25C800D7009B9101 /* NetworkController.swift in Sources */,
+				A1955D7225C7E7DF009B9101 /* AppDelegate.swift in Sources */,
+				A195DCBE25C81405003D3413 /* UserAlbumsTableViewCell.swift in Sources */,
+				A195DCFC25C84CFD003D3413 /* ImageViewerViewController.swift in Sources */,
+				A1955D8C25C7FF1B009B9101 /* ProgressHUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1955D7725C7E7DF009B9101 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1955D7825C7E7DF009B9101 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1955D7C25C7E7E0009B9101 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1955D7D25C7E7E0009B9101 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1955D8025C7E7E0009B9101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1955D8125C7E7E0009B9101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1955D8325C7E7E0009B9101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A2D3BE2E0662D23899C87A /* Pods-Hazem-HSSTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSXM6Q84HS;
+				INFOPLIST_FILE = "Hazem-HSSTask/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qcec.Hazem-HSSTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A1955D8425C7E7E0009B9101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E0B25163EFB788A4B44559 /* Pods-Hazem-HSSTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YSXM6Q84HS;
+				INFOPLIST_FILE = "Hazem-HSSTask/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qcec.Hazem-HSSTask";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1955D6925C7E7DE009B9101 /* Build configuration list for PBXProject "Hazem-HSSTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1955D8025C7E7E0009B9101 /* Debug */,
+				A1955D8125C7E7E0009B9101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1955D8225C7E7E0009B9101 /* Build configuration list for PBXNativeTarget "Hazem-HSSTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1955D8325C7E7E0009B9101 /* Debug */,
+				A1955D8425C7E7E0009B9101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1955D6625C7E7DE009B9101 /* Project object */;
+}
